@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
+import { rxico } from './rxico'
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -20,11 +21,11 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const features = [
   {
-    name: 'Analytics',
-    href: '#',
+    name: 'Rx Filling',
+    href: './rxrefill',
     description:
-      'Get a better understanding of where your traffic is coming from.',
-    icon: ChartBarIcon
+      'Get your medicine on shop without visiting.',
+    icon: rxico
   },
   {
     name: 'Engagement',
@@ -153,7 +154,7 @@ export default function Nav() {
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                  className="flex-shrink-0 h-6 w-6 fill-orange-900"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
